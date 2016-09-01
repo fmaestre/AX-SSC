@@ -1,0 +1,15 @@
+TAB-1   Query para default location.
+TAB-3
+		Must be TJ-MFG	
+						RollStockMaterial
+						Wires
+						\\cavan01bpw002d\ax\Mapping\AX Item BOM Overrides.xls
+						TAB-3
+								Field WareHouse
+		Quantity: Must be Numeric, No ceros, no negatives, no wierd symbols
+		
+		UOM     	: g instead of Gross
+		Reservation : If WIP then Manual, if no then Start
+		Flush		: If WIP then Start, if no then Manual
+		Per series  : Qty equual than Production Order Quantity in Tab#1
+		Operation 	: vlookups!
