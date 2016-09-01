@@ -35,6 +35,10 @@ IF(SELECT COUNT(*) FROM [dbo].['Prod BOM details$'] WHERE [Item number]	not	like
 		  AND Warehouse <> 'TJ-MFG'
 IF (@count > 0)																				PRINT 'ERROR - Wrong TJ-MFG warehouse for ' + cast(@count as nvarchar(10)) +'(items) => ' + @tab2
 
+SELECT @count = COUNT(1) FROM [dbo].['Production  details$'] WHERE Quantity <> [Report remainder]
+IF (@count > 0)																				PRINT 'ERROR (' + cast(@count as nvarchar) + ') - Quantity <> than [Report remainder] . => '	+ @tab1
+
+
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 --------- TO RUN IN TARGET ENVIRONMENT ------------ Components Validation.
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
