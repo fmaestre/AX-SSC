@@ -12,4 +12,4 @@ TAB-3
 		Reservation : If WIP then Manual, if no then Start
 		Flush		: If WIP then Start, if no then Manual
 		Per series  : Qty equual than Production Order Quantity in Tab#1
-		Operation 	: vlookups!tyhrtyrty
+		Operation 	: vlookups!
